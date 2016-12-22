@@ -1,0 +1,834 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>JQian</title>
+    <link rel="icon" href="images/resume-ico.ico"/>
+    <link rel="stylesheet" href="css/animate.css"/>
+    <script src="js/jquery-1.11.3.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style-index.css" rel='stylesheet' type='text/css'/>
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({scrollTop: $(this.hash).offset().top}, 1000);
+            });
+        });
+    </script>
+</head>
+<body>
+<!-- container -->
+<!-- header -->
+<div id="home" class="header">
+    <div class="container">
+        <!-- top-hedader -->
+        <div class="top-header">
+            <!-- /logo -->
+            <!--top-nav---->
+            <div class="top-nav animated bounce">
+                <!--<div class="navigation">-->
+                <div class="navbar navbar-inverse ">
+                    <div class="container">
+
+                        <!--<div class="navigation-right">-->
+                        <div class="navbar-header navbar-text">
+                            <a class="navbar-brand  logo ">
+                                <span>j</span>qian
+                            </a>
+                            <span class=" navbar-toggle collapsed menu" data-toggle="collapse" data-target="#caidan" onClick="toggleCaidan()">
+                                <!--<img src="images/menu.png"  alt=" "/>-->
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </span>
+
+                        </div>
+                        <div class="collapse navbar-collapse" id="caidan">
+                            <ul class="nav navbar-nav navbar-right navbar-text">
+                                <li class="active"><a data-hover="首页" href="index.html"><span>首页</span></a></li>
+                                <li><a class="scroll" data-hover="关于" href="#about"><span>关于</span></a></li>
+                                <li><a class="scroll" data-hover="技能" href="#services"><span>技能</span></a></li>
+                                <li><a class="scroll" data-hover="工作经验" href="#work"><span>工作经验</span></a></li>
+                                <li><a class="scroll" data-hover="项目" href="#port"><span>项目</span></a></li>
+                                <li><a class="scroll" data-hover="博客" href="#blogs"><span>博客</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <!-- /top-hedader -->
+            <div class="banner-info">
+                <div class="col-md-7 header-right animated zoomIn">
+                    <h1>Hi !</h1>
+                    <h6>帅哥&美女</h6>
+                    <ul class="address">
+                        <li>
+                            <ul class="address-text">
+                                <li><b><span class="glyphicon glyphicon-user"></span></b></li>
+                                <li>江芊</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="address-text">
+                                <li><b><span class="glyphicon glyphicon-gift"></span></b></li>
+                                <li>1993-11-01</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="address-text">
+                                <li><b><span class="glyphicon glyphicon-phone"></span></b></li>
+                                <li>(0)15549483738</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="address-text">
+                                <li><b><span class="glyphicon glyphicon-home"></span></b></li>
+                                <li>北京市海淀区</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="address-text">
+                                <li><b><span class="glyphicon glyphicon-envelope"></span></b></li>
+                                <li><a href="mailto:example@mail.com">shuigongqian@sina.com</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="address-text">
+                                <li><b class="qq-logo"><img src="images/qq04.png" alt=""/></b></li>
+                                <li class="qq-grcode">
+                                    <a id="qq"  href="">895903966&nbsp;&nbsp;<span class="glyphicon glyphicon-qrcode"></span>
+                                    (备注来自简历)
+                                    </a>
+                                    <div class="qq-img">
+                                        <img src="images/qq.jpg"  alt=""/>
+                                        <button type="button" class="btn  close" >&times;</button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-md-5 header-left animated zoomIn">
+                    <img src="images/img01.jpg" alt="">
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- about -->
+<div class="about">
+    <div class="row">
+        <div class="col-md-6 col-md-push-6 col-sm-12 about-left">
+            <div id="mycarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#mycarousel" data-slide-to="1"></li>
+                    <li data-target="#mycarousel" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                            <h2>个性标签</h2>
+                            <p>射手座<br/>
+                                女汉？萌妹？（部分像男生那样的倔强，部分女生的温柔可爱O(∩_∩)O~）<br/>
+                                勤奋？小懒?（谁说我不勤奋，偶尔休息休息啦）<br/>
+                                聪明？贤惠？（我选聪明\(^o^)/）<br/>
+                                运动？宅？（当然是运动女青年，羽毛球，跑步，爬山，瑜伽...叫上我吧！）<br/>
+                                90后--奋斗ing&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;单身ing
+                            </p>
+
+                            <!--<img src="images/pic1.jpg" alt="...">-->
+                            <ul>
+                                <li><a  href="#port">项目</a></li>
+                                <li><a  href="#blogs">博客</a></li>
+                            </ul>
+                    </div>
+                    <div class="item">
+                            <h2>基本信息</h2>
+                            <p>
+                                户籍：湖北<br/>
+                                学历：本科(学士)<br/>
+                                专业：市场营销<br/>
+                                毕业院校：湖北大学知行学院<br/>
+                                毕业时间：2015年7月<br/>
+                                寻找工作：北京---web前端<br/>
+                            </p>
+                            <!--<img src="images/pic1.jpg" alt="...">-->
+                            <ul>
+                                <li><a  href="#port">项目</a></li>
+                                <li><a  href="#blogs">博客</a></li>
+                            </ul>
+
+                    </div>
+                    <div class="item p-text-indent">
+                        <h2>总而言之</h2>
+                        <p>
+                            毕业后在商情数据（股票代码：838497）的开发工作中不断成长，通过数据型、商城型、app应用型等项目的前后端发开和自我学习，技术上和学习习惯上有很大的提升。
+
+                        </p>
+                        <p>
+                            随时关注前沿的前端技术向往更加有挑战的开发工作，不断突破自我，向全栈看齐。工作生活都乐于沟通分享，爱爬山、跑步、羽毛球等运动，更爱旅游。
+
+                        </p>
+                        <p>勿忘初心，放得始终。</p>
+                        <!--<img src="images/pic1.jpg" alt="...">-->
+                        <ul>
+                            <li><a  href="#port">项目</a></li>
+                            <li><a  href="#blogs">博客</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-md-pull-6 col-sm-12 about-right"></div>
+    </div>
+</div>
+<div id="services" class="services">
+    <div class="container">
+        <div class="service-head one text-center ">
+            <h4 class=" animated fadeInDown
+">我都会？</h4>
+
+            <h3>IT <span>技能</span></h3>
+            <span class="border two"></span>
+        </div>
+        <!-- services-grids -->
+        <div class="wthree_about_right_grids w3l-agile">
+            <div class="row">
+                <div class="col-md-6 wthree_about_right_grid">
+                    <div class="col-xs-4 wthree_about_right_grid_left">
+                        <div class="hvr-rectangle-in">
+                            <i class=""><b>H</b></i>
+                        </div>
+                    </div>
+                    <div class="col-xs-8 wthree_about_right_grid_right">
+                        <h4>HTML5</h4>
+                        <ul>
+                            <li>精通HTML5,能够熟练完成各种静态页面的编写;</li>
+                            <li>熟练掌握HTML5各种新技术，能够实现Canvas绘图和SVG绘图、绘制复杂图表、实现地理定位;</li>
+                            <li>熟悉HTTP协议的机制..</li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="col-md-6 wthree_about_right_grid">
+                    <div class="col-xs-4 wthree_about_right_grid_left">
+                        <div class="hvr-rectangle-in">
+                            <i class=""><b>C</b></i>
+                        </div>
+                    </div>
+                    <div class="col-xs-8 wthree_about_right_grid_right">
+                        <h4>CSS</h4>
+                        <ul>
+                            <li>熟练掌握盒模型、常用布局以及浏览器和移动设备兼容性;</li>
+                            <li>熟练编写动态CSS，比如less;</li>
+                            <li>能够使用boot快速开发响应式布局，并进行定制;</li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 wthree_about_right_grid">
+                    <div class="col-xs-4 wthree_about_right_grid_left">
+                        <div class="hvr-rectangle-in">
+                            <i class=""><b>J</b></i>
+                        </div>
+                    </div>
+                    <div class="col-xs-8 wthree_about_right_grid_right">
+                        <h4>JS</h4>
+                        <ul>
+                            <li>熟悉JavaScript,DOM,BOM等原生js，能够使用原生js开发页面功能;</li>
+                            <li>熟悉MVC，双向数据绑定等原理;</li>
+                            <li>熟练使用AngularJS、ionic并熟悉ZeptoJS、React等主流前端框架;</li>
+                            <li>熟悉服务器端交互，能够使用Ajax与服务器交互并解决跨域问题;</li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="col-md-6 wthree_about_right_grid">
+                    <div class="col-xs-4 wthree_about_right_grid_left">
+                        <div class="hvr-rectangle-in">
+                            <i class=""><b>P</b></i>
+                        </div>
+                    </div>
+                    <div class="col-xs-8 wthree_about_right_grid_right">
+                        <h4>PHP</h4>
+                        <ul>
+                            <li>熟悉服务器端变成语言: PHP, SQL语言，能够使用PHP和MySQL进行简单服务器端功能开发;</li>
+                            <li>熟练使用PHP编写页面;</li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-md-6 wthree_about_right_grid">
+                    <div class="col-xs-4 wthree_about_right_grid_left">
+                        <div class="hvr-rectangle-in">
+                            <i class=""><b>A</b></i>
+                        </div>
+                    </div>
+                    <div class="col-xs-8 wthree_about_right_grid_right">
+                        <h4>APP</h4>
+                        <ul>
+                            <li>了解PhoneGap，ionic,微信开发等移动端开发;</li>
+                        </ul>
+
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="col-md-6 wthree_about_right_grid">
+                    <div class="col-xs-4 wthree_about_right_grid_left">
+                        <div class="hvr-rectangle-in">
+                            <i class=""><b>M</b></i>
+                        </div>
+                    </div>
+                    <div class="col-xs-8 wthree_about_right_grid_right">
+                        <h4>MORE</h4>
+                        <ul>
+                            <li>了解Node.js和主要模块,能够使用Node.js开发简单服务器端应用程序，访问MySQL数据库;</li>
+                            <li>熟练使用WebStorm、PS等工具。</li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- services-grids -->
+    </div>
+</div>
+<!-- services -->
+<!--work-experience-->
+<div id="work" class="work">
+    <div class="container">
+        <div class="service-head text-center">
+            <h4 class=" animated fadeInDown
+">我做过啥？</h4>
+
+            <h3>IT <span>工作经验</span></h3>
+            <span class="border one"></span>
+        </div>
+        <div class="time-main w3l-agile">
+            <div class="col-md-6 year-info">
+                <ul class="year">
+                    <li>2014-2016</li>
+                    <div class="clearfix"></div>
+                </ul>
+            </div>
+            <ul class="col-md-6 timeline">
+                <li>
+                    <div class="timeline-badge info"><i class="glyphicon glyphicon-briefcase"></i></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="timeline-title">中商产业研究院</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p><b>主要职责：</b>负责门户网站，以及子网站的web页面开发，包括H5/CSS/JS/PHP等样式及交互模块<br/>
+                                <b>工作内容：</b><br/>
+                                1、静态页面及样式的编写(H5/CSS),以及简单的PS图片制作<br/>
+                                2、动态交互及异步请求提交动态数据的JS编写<br/>
+                                3、多数据单页面AngularJS网页编写，以及ionic移动端app应用编写<br/>
+                                4、其他工作：PHP动态页面，以及简单MySQL编写</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<!--//work-experience-->
+
+<!-- portfolio -->
+<div class="portfolio" id="port">
+    <div class="service-head text-center">
+        <h4 class=" animated fadeInDown
+">哪些项目？</h4>
+
+        <h3>我的<span>项目</span></h3>
+        <span class="border"></span>
+    </div>
+    <div class="portfolio-grids">
+        <div class="sap_tabs">
+            <div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+                <ul class="resp-tabs-list" role="tablist">
+                    <li class="resp-tab-item active" role="tab"><a href="#tab_item-1"  aria-controls="tab_item-1" data-toggle="tab">WEB网页</a></li>
+                    <li class="resp-tab-item"  role="tab"><a href="#tab_item-2" aria-controls="tab_item-2" data-toggle="tab">手机移动端</a></li>
+                    <!--<li class="resp-tab-item"  role="tab"><a href="#tab_item-3" aria-controls="tab_item-3" data-toggle="tab">小游戏</a></li>-->
+                </ul>
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active " id="tab_item-1">
+                        <div class="row row-nomargin">
+                            <div class="col-md-3 team-gd col-xs-6 ">
+                                <img class="img-responsive" src="images/pro-w-01.jpg" alt="">
+                                    <a href="#portfolioModal01" class="portfolio-link b-link-diagonal b-animate-go"
+                                       data-toggle="modal">
+                                        <div class="overlay">
+                                            <h4>askci.com(中商情报网)</h4>
+                                        </div>
+                                    </a>
+                            </div>
+                            <div class="col-md-3 team-gd  col-xs-6">
+                                <img class="img-responsive" src="images/pro-w-02.jpg" alt="">
+                                    <a href="#portfolioModal02" class="portfolio-link b-link-diagonal b-animate-go"
+                                       data-toggle="modal">
+                                        <div class="overlay">
+                                            <h4>8.askci.com(八方查)</h4>
+                                        </div>
+                                    </a>
+
+                            </div>
+                            <div class="col-md-3 team-gd col-xs-6  ">
+                                <img class="img-responsive" src="images/pro-w-03.jpg" alt="">
+                                <a href="#portfolioModal03" class="portfolio-link b-link-diagonal b-animate-go"
+                                   data-toggle="modal">
+                                    <div class="overlay">
+                                        <h4>m.askci.com(手机版中商情报网)</h4>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 team-gd col-xs-6 ">
+                                <img class="img-responsive" src="images/pro-w-05.jpg" alt="">
+                                <a href="#portfolioModal04" class="portfolio-link b-link-diagonal b-animate-go"
+                                   data-toggle="modal">
+                                    <div class="overlay">
+                                        <h4>d.askci.com(手机版中商情报网)</h4>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tab_item-2">
+                        <div class="row row-nomargin">
+                            <div class="col-md-3 team-gd col-xs-6 ">
+                                <img class="img-responsive" src="images/pro-m-01.jpg" alt="">
+                                <a href="#portfolioModal11" class="portfolio-link b-link-diagonal b-animate-go"
+                                   data-toggle="modal">
+                                    <div class="overlay">
+                                        <h4>8.askci.com(八方查app版)</h4>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 team-gd col-xs-6">
+                                <img class="img-responsive" src="images/pro-m-02.jpg" alt="">
+                                <a href="#portfolioModal12" class="portfolio-link b-link-diagonal b-animate-go"
+                                   data-toggle="modal">
+                                    <div class="overlay">
+                                        <h4>8.askci.com(八方查app版)(一)</h4>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 team-gd col-xs-6 ">
+                                <img class="img-responsive" src="images/pro-m-03.jpg" alt="">
+                                <a href="#portfolioModal13" class="portfolio-link b-link-diagonal b-animate-go"
+                                   data-toggle="modal">
+                                    <div class="overlay">
+                                        <h4>8.askci.com(八方查app版)(二)</h4>
+                                    </div>
+                                </a>
+
+                            </div>
+                            <div class="col-md-3 team-gd col-xs-6 ">
+                                <img class="img-responsive" src="images/pro-m-04.jpg" alt="">
+                                <a href="#portfolioModal14" class="portfolio-link b-link-diagonal b-animate-go"
+                                   data-toggle="modal">
+                                    <div class="overlay">
+                                        <h4>8.askci.com(八方查app版)(三)</h4>
+                                    </div>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- //portfolio -->
+<!-- top-grids -->
+<div class="blog" id="blogs">
+    <div class="container">
+        <div class="service-head text-center">
+            <h4 class=" animated fadeInDown
+">博客</h4>
+
+            <h3>我的 <span>博客</span></h3>
+            <span class="border one"></span>
+        </div>
+        <div class="news-grid w3l-agile">
+            <div class="col-md-6 news-img">
+                <a href="#" data-toggle="modal" data-target="#myModal01"> <img src="images/blogs-01.jpg" alt=" "
+                                                                              class="img-responsive"></a>
+
+            </div>
+            <div class="col-md-6 news-text">
+                <h3><a href="#" data-toggle="modal" data-target="#myModal01">ionic常见坑（一）</a></h3>
+                <ul class="news">
+                    <li><i class="glyphicon glyphicon-tags"></i>技术类分享</li>
+                </ul>
+                <p class="text-indent">ionic v1.2取消了 ion-content 默认的阻尼回弹效果，明明一模一样的代码，就是没有回弹效果...</p>
+                <a href="#" data-toggle="modal" data-target="#myModal01" class="read hvr-shutter-in-horizontal">查看更多</a>
+
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+        <div class="news-grid">
+
+            <div class="col-md-6 news-text two">
+                <h3><a href="#" data-toggle="modal" data-target="#myModal02">跨域资源请求问题</a></h3>
+                <ul class="news">
+                    <li><i class="glyphicon glyphicon-tags"></i>技术类分享</li>
+                </ul>
+                <p class="text-indent">只要协议、域名、端口有任何一个不同，都被当做是不同的域。对于端口和协议的不同，智能通过后台来解决...</p>
+                <a href="#" data-toggle="modal" data-target="#myModal02" class="read hvr-shutter-in-horizontal">查看更多</a>
+
+            </div>
+            <div class="col-md-6 news-img two">
+                <a href="#" data-toggle="modal" data-target="#myModal02"> <img src="images/blogs-02.jpg" alt=" "
+                                                                              class="img-responsive"></a>
+
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="news-grid">
+            <div class="col-md-6 news-img">
+                <a href="#" data-toggle="modal" data-target="#myModal03"> <img src="images/blogs-03.jpg" alt=" "
+                                                                              class="img-responsive"></a>
+
+            </div>
+            <div class="col-md-6 news-text">
+                <h3><a href="#" data-toggle="modal" data-target="#myModal03">灵山徒步之旅</a></h3>
+                <ul class="news">
+                    <li><i class="glyphicon glyphicon-tags"></i>旅游类分享</li>
+                </ul>
+                <p class="text-indent">第一次和驴友一起徒步爬山，全程均为前驴友们留下来的路，松落的石头，满山的小灌木...</p>
+                <a href="#" data-toggle="modal" data-target="#myModal03" class="read hvr-shutter-in-horizontal">查看更多</a>
+
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<!-- top-grids -->
+<!-- /blog-pop-->
+    <div class="modal ab fade" id="myModal01" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog about" role="document">
+            <div class="modal-content about">
+                <div class="modal-header">
+                    <button type="button" class="close ab" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body about">
+                    <div class="about">
+
+                        <div class="about-inner">
+
+                            <img src="images/blogs-01.jpg" alt="about"/>
+                            <h4 class="tittle">ionic常见坑（一）</h4>
+
+                            <p>ionic v1.2取消了 ion-content 默认的阻尼回弹效果，明明一模一样的代码，就是没有回弹效果，后来发现是版本更新的锅，翻了很久后，在 官方博客 的 评论 里找到了答案：
+                                </p><p>Great news, thank you! It seems that the “has-bouncing=’true'” does not work with the native scroll, is it correct? I managed though to have it again by going to back go js scroll (overflow-scroll=”false”)
+                                I only checked in the browser so if any one can confirm that with native scrolling removes bouncing that would be great.
+                                I need this feature for a custom ‘pull refresh’ method I had.
+                                也就是说，v1.2之后想要有阻尼回弹效果，需要这么做：<br/>
+                                &lt;ion-content overflow-scroll="false" has-bouncing="true">&lt;/ion-content></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal ab fade" id="myModal02" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog about" role="document">
+            <div class="modal-content about">
+                <div class="modal-header">
+                    <button type="button" class="close ab" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body about">
+                    <div class="about">
+
+                        <div class="about-inner">
+
+                            <img src="images/blogs-02.jpg" alt="about"/>
+                            <h4 class="tittle">跨域资源请求问题</h4>
+
+                            <p>跨域资源共享（CORS）
+                            </p>
+                            <P>CROS(Cross-Origin Resource Sharing)跨域资源共享，定义了必须在访问跨域资源时，浏览器与服务器该如何沟通。CROS背后的基本思想就是使用自定义的HTTP头部让浏览器与服务器进行沟通，从而决定请求头部响应或失败。</P>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="modal ab fade" id="myModal03" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog about" role="document">
+        <div class="modal-content about">
+            <div class="modal-header">
+                <button type="button" class="close ab" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body about">
+                <div class="about">
+
+                    <div class="about-inner">
+
+                        <img src="images/blogs-03.jpg" alt="about"/>
+                        <h4 class="tittle">灵山徒步之旅</h4>
+
+                        <p>9月的灵山徒步旅游，第一次和驴友一起徒步爬山，全程均为前驴友们留下来的路，松落的石头，满山的小灌木，给整个行程增加了不少难度和乐趣，到达山顶的兴奋，下山的紧张，满满的收获。
+                        </p>
+                        <p>让我最深刻的是户外的规矩，团体出游，守规矩很重要，量力而行，你好我好大家好。 </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- //blog-pop-->
+<div class="copy_right text-center">
+    <p>Copyright &copy; 2016.小芊所有.<a target="_blank" href=""></a>
+    </p>
+    <ul class="social-icons two">
+        <li><a href="https://github.com/Aimee1608">Git</a></li>
+        <li><a href="http://qzoom.applinzi.com">Blog</a></li>
+    </ul>
+</div>
+
+
+<!-- /container -->
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal01" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+                        <h3><a href="http://www.askci.com">askci.com(门户网站)</a></h3>
+                        <img src="images/pro-w-01.jpg" class="img-responsive img-centered" alt="">
+
+                        <p>责任描述：页面编写、包括H5/CSS静态及JS动效，分为PC版和移动版。
+                            项目简介：该项目为中商情报网门户网站，更新老版网页，主要有轮播特效，动态新闻数据的生成，以及其他的动态效果。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal02" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+                        <h3><a href="http://8.askci.com">8.askci.com(八方查-网页版)</a></h3>
+                        <img src="images/pro-w-02.jpg" class="img-responsive img-centered" alt="">
+
+                        <p>责任描述:负责静态页面(包括canvas动画)和AngularJS动态数据生成的编写
+                        项目简介:基于公司庞大的数据库开发的查询服务，canvas动画响应式web页面,主要用AngularJS动态生成，多个动态数据的单页面跳转，以及注册登录关注等功能；</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal03" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+                        <h3><a href="http://m.askci.com">m.askci.com(门户网站手机版本)</a></h3>
+                        <img src="images/pro-w-03.jpg" class="img-responsive img-centered" alt="">
+
+                        <p>
+                            责任描述:负责静态页面的编写，html/css
+                            项目简介:为门户网站的手机版本，适应各种尺寸的手机屏幕浏览，简化了部分内容的呈现。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal04" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+                        <h3><a href="http://d.askci.com">qst.askci.com(千数堂)</a></h3>
+                        <img src="images/pro-w-05.jpg" class="img-responsive img-centered" alt="">
+
+                        <p>责任描述：负责静态页面，及H5和JS交互效果的实现
+                            项目简介：该项目为商情数据的数据电商模块业务，商品为excel、world等形式的产业数据，包括登录注册、首页、详情、购买、用户中心等页面模块，后台由Asp.net实现
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal11" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+                        <h3><a href="http://8.askci.com">8.askci.com(八方查app)</a></h3>
+                        <img src="images/pro-m-01.jpg" class="img-responsive img-centered" alt="">
+
+                        <p>责任描述：
+                            app：负责多个主模块页面的开发（包括异步搜索、H5登录注册等监听及数据绑定）。
+                            项目简介：
+                            基于公司庞大的数据库开发的查询服务，canvas动画响应式web页面,主要用AngularJS动态生成，多个动态数据的单页面跳转，以及注册登录关注等功能；app版本由ionic框架编写。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal12" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+                        <h3><a href="http://8.askci.com">8.askci.com(八方查app)(一)</a></h3>
+                        <img src="images/pro-m-02.jpg" class="img-responsive img-centered" alt="">
+
+                        <p>动态数据获取生成，页面展示，通过ionic的$http请求实现，$watch监听，异步获取搜索结果列，分省份等多条件查找，上拉加载更多等功能。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal13" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+                        <h3><a href="http://8.askci.com">8.askci.com(八方查app)(二)</a></h3>
+                        <img src="images/pro-m-03.jpg" class="img-responsive img-centered" alt="">
+
+                        <p>八方查主要提供搜索业务，分为公司、专利、商标、诉讼四个方面，用户可以分别查询内容，并可以通过不同的条件进行筛选。多个$watch嵌套监听关键词和条件。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal14" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+                        <h3><a href="http://8.askci.com">8.askci.com(八方查app)(三)</a></h3>
+                        <img src="images/pro-m-04.jpg" class="img-responsive img-centered" alt="">
+
+                        <p>登录注册页面，用户可以关注喜欢的公司等查询结果，并在关注页面展示出来。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<a href="#home" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<!--start-smooth-scrolling-->
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        /*
+         var defaults = {
+         containerID: 'toTop', // fading element id
+         containerHoverID: 'toTopHover', // fading element hover id
+         scrollSpeed: 1200,
+         easingType: 'linear'
+         };
+         */
+
+        $().UItoTop({easingType: 'easeOutQuart'});
+
+    });
+    $('.carousel').carousel({
+        interval:3000
+    });
+    function toggleCaidan(){
+        $('.collapse').collapse();
+    }
+    $("#qq").click(function(e){
+        e.preventDefault();
+        $(".qq-img").addClass("click");
+    });
+    $(".qq-img").children("button").click(function(){
+        $(".qq-img").removeClass("click");
+    })
+</script>
+</body>
+</html>
+
